@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="birth.css">
+    <script src="myscript.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">BIRTHDAY CALCULATOR</h1>
+                <p>This web application  takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
+
+                    Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
+
+                    <h2>MALE</h2>
+                    <p2>
+               Sunday:Kwasi, Monday:Kwadwo, Tuesday:Kwabena, Wednesday:Kwaku, Thursday:Yaw, Friday:Kofi, Saturday:Kwame.  </p2> 
+               
+               <h2>FEMALE</h2>
+               <p2>
+                Sunday:Akosua, Monday:Adwoa, Tuesday:Abenaa,Wednesday:Akua, Thursday: Yaa, Friday:Afua, Saturday: Ama.  </p2>
+        
+               </div>
+        </section>
+        <section  id="calculator">
+            <h1 class="headings"> THE CALCULATOR</h1>
+            <form action="action_page.php" class="form" method="post">
+
+                <script>
+                    function myFunction() {
+                    var x, text;
+        
+          // Get the value of the input field with id="numb"
+          x = document.getElementById("numb").value;
+        
+          // If x is Not a Number or less than one or greater than 31
+          if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+          } else {
+            text = "Input OK";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+        
+                <input type="number" name="date" class="input" placeholder="Enter your date of month">
+                <input type="number" name="month" class="input" placeholder="Enter your month of birth">
+                <input type="number" name="year" class="input" placeholder="Enter your year of birth">
+                <input type="text" name="gender" class="input" placeholder="Enter your gender">
+                <input type="submit" value="CALCULATE" id="send">
+                
+            </form>
+        </section>
+        </div>
+</body>
+</html>

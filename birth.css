@@ -1,0 +1,50 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/09/23/39/ghana-2131205__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    color: black;
+    
+}
+div{
+    text-align: center;
+    text-justify: auto;
+    color: whitesmoke;
+    
+}
+h1{
+    color: yellowgreen;
+    text-align: center;
+
+}
+form{
+    align-items: center;
+    display: column;  
+    flex-direction: row;
+    padding: 30px;
+    width: 650px;
+    
+}
+
+input{
+    padding:  12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+   box-shadow: black;
+   color: gold;
+   background-color: black;
+   }
