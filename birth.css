@@ -21,10 +21,9 @@ h1{
 
 }
 form{
-    align-items: center;
+    align-items: left;
     display: flex;  
     flex-direction: column;
-    padding: 30px;
     width: 650px;
     
 }
