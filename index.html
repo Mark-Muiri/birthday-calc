@@ -28,20 +28,45 @@
         </section>
         
                 <input type="number" name="date" class="input" placeholder="Enter your date of month" id="DD">
-                <input id="DD" type="number" min="1" max="31" required placeholder="01234">
-                <button onclick="myFunction()">OK</button>
-                <script>
-                    function myFunction() {
-                     var inpObj = document.getElementById("id1");
-                        if (!inpObj.checkValidity()) {
-    document.getElementById("demo").innerHTML = inpObj.validationMessage;
-  }
-}
-</script>
+                     <script>
+                     function myFunction() {
+                     var inpObj = document.getElementById("DD");
+                     if (!inpObj.checkValidity()) {
+                     document.getElementById("demo").innerHTML = inpObj.validationMessage;
+                     }
+                     }
+                     </script>
                 <input type="number" name="month" class="input" placeholder="Enter your month of birth"id="MM">
+                        <script>
+                        function myFunction() {
+                        var inpObj = document.getElementById("MM");
+                        if (!inpObj.checkValidity()) {
+                        document.getElementById("").innerHTML = inpObj.validationMessage;
+                        }
+                        }
+                        </script>
                 <input type="number" name="century" class="input" placeholder="Enter the first two digits of the year your were born i.e 19 in 1989" id="YY">
-                <input type="number" name="year" class="input" placeholder="Enter ythe last two digits of the year your born i.e 89 in 1989" id="CC">
-                <input type="text" name="gender" class="input" placeholder="Enter your gender">
+                         <script>
+                         function myFunction() {
+                         var inpObj = document.getElementById("YY");
+                         if (!inpObj.checkValidity()) {
+                         document.getElementById("").innerHTML = inpObj.validationMessage;
+                         }
+                         }
+                         </script>
+                <input type="number" name="year" class="input" placeholder="Enter ythe last two digits of the year your born i.e 89 in 1989" id="CC"> 
+                        <script>
+                        function myFunction() {
+                        var inpObj = document.getElementById("CC");
+                        if (!inpObj.checkValidity()) {
+                        document.getElementById("").innerHTML = inpObj.validationMessage;
+                        }
+                        }
+                        </script>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
                 <input type="submit" value="CALCULATE" id="send">
                 
             </form>
