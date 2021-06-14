@@ -25,52 +25,35 @@
                 Sunday:Akosua, Monday:Adwoa, Tuesday:Abenaa,Wednesday:Akua, Thursday: Yaa, Friday:Afua, Saturday: Ama.  </p2>
         
                </div>
+        </section class="nameform">
+                <form>
+                    <div class="panel col-sm-6 offset-sm-3">
+                        <div class="form-group top-form">
+                          <label for="century" class="labels">Century</label>
+                          <input type="number" class="form-control" placeholder="Enter the century" id="century" required  min="0" max="30">
+                        </div>
+                        <div class="form-group">
+                          <label for="year" class="labels">Year</label>
+                          <input type="number" placeholder="Enter the year" class="form-control" id="year" required min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                          <label for="month" class="labels">Month</label>
+                          <input type="number" class="form-control" placeholder="Enter the month of the year" id="month" required min="0" max="12">
+                        </div>
+                        <div class="form-group">
+                          <label for="monthDay" class="labels">Day of month</label>
+                          <input type="number" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12">
+                        </div>
+                        <form class="radio-button">
+                          <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+                          <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+                        </form>
+                        <br>
+                        <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+                </div>
+                <div class="result"> <h1 id="result"></h1></div>
         </section>
-        
-                <input type="number" name="date" class="input" placeholder="Enter your date of month" id="DD">
-                     <script>
-                     function myFunction() {
-                     var inpObj = document.getElementById("DD");
-                     if (!inpObj.checkValidity()) {
-                     document.getElementById("demo").innerHTML = inpObj.validationMessage;
-                     }
-                     }
-                     </script>
-                <input type="number" name="month" class="input" placeholder="Enter your month of birth"id="MM">
-                        <script>
-                        function myFunction() {
-                        var inpObj = document.getElementById("MM");
-                        if (!inpObj.checkValidity()) {
-                        document.getElementById("").innerHTML = inpObj.validationMessage;
-                        }
-                        }
-                        </script>
-                <input type="number" name="century" class="input" placeholder="Enter the first two digits of the year your were born i.e 19 in 1989" id="YY">
-                         <script>
-                         function myFunction() {
-                         var inpObj = document.getElementById("YY");
-                         if (!inpObj.checkValidity()) {
-                         document.getElementById("").innerHTML = inpObj.validationMessage;
-                         }
-                         }
-                         </script>
-                <input type="number" name="year" class="input" placeholder="Enter ythe last two digits of the year your born i.e 89 in 1989" id="CC"> 
-                        <script>
-                        function myFunction() {
-                        var inpObj = document.getElementById("CC");
-                        if (!inpObj.checkValidity()) {
-                        document.getElementById("").innerHTML = inpObj.validationMessage;
-                        }
-                        }
-                        </script>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="submit" value="CALCULATE" id="send">
-                
-            </form>
-        </section>
+       
         </div>
 </body>
 </html>
