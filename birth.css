@@ -22,8 +22,8 @@ h1{
 }
 form{
     align-items: center;
-    display: column;  
-    flex-direction: row;
+    display: flex;  
+    flex-direction: column;
     padding: 30px;
     width: 650px;
     
