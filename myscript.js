@@ -7,13 +7,13 @@ function getInput(){
   dayOfMonth = parseInt(document.getElementById("monthday").value);
 
 
-  if(century == "" && century < 0 || >20){
-    alert("Input the correct gender");
+  if(century == "" ){
+    alert("Input the correct century");
     return false;
-  }else if (year == "" && year <0 || >99){
+  }else if (year == "" ){
     alert("Input the correct year");
     return false;
-  }else if (month == "" && year <1 || >>12){
+  }else if (month == "" ){
     alert("Input the correct month");
     return false;
     }else if (month == 2 && dayofmonth > 29){
