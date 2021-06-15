@@ -16,6 +16,9 @@ function getInput(){
   }else if (month == ""){
     alert("Input the correct month");
     return false;
+    }else if (month == 2 && dayofmonth > 29){
+    alert("Feb has no more than 28 days");
+    return false;
   }else if(dayOfMonth == ""){
     alert("input the correct date");
     return false;
